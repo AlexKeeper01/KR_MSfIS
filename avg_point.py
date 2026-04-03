@@ -8,7 +8,7 @@ def f(x):
 def df(x):
     return 1/x + 2 * math.cos(x)
 
-def midpoint_derivative_search(a, b, eps):
+def search(a, b, eps):
     iteration = 1
 
     while True:
@@ -39,7 +39,7 @@ a = 2
 b = 6
 eps = 0.02
 
-xmin, fmin = midpoint_derivative_search(a, b, eps)
+xmin, fmin = search(a, b, eps)
 
 print(f"\nx_min ≈ {xmin:.4f}")
 print(f"f(x_min) ≈ {fmin:.4f}")
