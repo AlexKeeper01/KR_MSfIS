@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 def f(x):
     return math.log(x) + 2 * math.sin(x)
 
-def golden_section_search(a, b, eps):
+def search(a, b, eps):
     phi = (math.sqrt(5) - 1) / 2
 
     x1 = b - phi * (b - a)
@@ -44,7 +44,7 @@ def golden_section_search(a, b, eps):
 a = 2
 b = 6
 eps = 0.02
-xmin, fmin = golden_section_search(a, b, eps)
+xmin, fmin = search(a, b, eps)
 
 print(f"\nx_min ≈ {xmin:.4f}")
 print(f"f(x_min) ≈ {fmin:.4f}")
