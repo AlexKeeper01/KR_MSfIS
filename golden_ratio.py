@@ -63,6 +63,7 @@ ax.xaxis.set_ticks_position('bottom')
 ax.yaxis.set_ticks_position('left')
 
 plt.scatter(xmin, fmin)
+plt.text(xmin + 0.1, fmin, f"({xmin:.4f}, {fmin:.4f})", color='red', fontsize=12)
 
 plt.axvline(x=xmin, linestyle="--")
 plt.axhline(y=fmin, linestyle="--")
